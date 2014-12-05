@@ -1,2 +1,2 @@
-boilerplate-vanilla
+boilerplate-tsp
 ===================
