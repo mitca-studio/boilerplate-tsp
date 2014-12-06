@@ -20,17 +20,18 @@ button:hover
 
 body {
 	font-family: $font-roboto;
-	@include font-size(14, 16);
+	font-size: 8pt;
+	line-height:10pt;
 	letter-spacing: -1px;
 	background: $backgroundgreen;
-	color: $overlay;
+	color: $body_text;
 	overflow-x: hidden;
 	margin:0;
 	border: 0;
 }
 
 a{
-	color: black;
+	color: rgba(255,255,255,.4);
 }
 a:hover {
 	color :$overlay;

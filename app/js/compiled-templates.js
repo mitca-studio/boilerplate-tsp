@@ -14,5 +14,5 @@ this["JST"]["app/templates/home.hbs"] = Handlebars.template({"compiler":[6,">= 2
   if (stack1 != null) { buffer += stack1; }
   stack1 = this.invokePartial(partials.menu, '', 'menu', depth0, undefined, helpers, partials, data);
   if (stack1 != null) { buffer += stack1; }
-  return buffer + "<div id=\"site-canvas\">\n	<div id=\"main\" data-role=\"main\">\n\n	</div>\n</div>\n";
+  return buffer + "<div id=\"site-canvas\">\n	<div id=\"main\" data-role=\"main\">\n        <div class=\"container\">\n    		<div class=\"top-wrapper clearfix\">\n    			<table border=\"0\" style=\"border-collapse:collapse;border:0px solid #FFCC00;width:170px\" cellpadding=\"3\" cellspacing=\"3\">\n    				<tr><td>Reino:</td><td>Animalia</td></tr>\n    				<tr><td>División:</td><td>Chordata</td></tr>\n    				<tr><td>Superclase:</td><td>Osteichthyes</td></tr>\n    				<tr><td>Clase:</td><td>Actinopterygii</td></tr>\n    				<tr><td>Orden:</td><td>Perciformes</td></tr>\n    				<tr><td>Familia:</td><td>Scaridae</td></tr>\n    				<tr><td>Género:</td><td>Sparisoma</td></tr>\n    			</table>\n        	</div>\n        </div>\n	</div>\n</div>\n";
 },"usePartial":true,"useData":true});
