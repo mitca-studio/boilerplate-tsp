@@ -1,0 +1,200 @@
+.navbar {
+	margin-bottom: 10px;
+	border-radius: 0px !important;
+	.navbar-inner {
+	    -webkit-border-radius: 0px 0px 3px 3px;
+	    -moz-border-radius: 0px 0px 3px 3px;
+	    -ms-border-radius: 0px 0px 3px 3px;
+	    -o-border-radius: 0px 0px 3px 3px;
+	    border-radius: 0px 0px 3px 3px;
+	}
+	.navbar-center{
+	 	width: 130px;
+	 	height: 50px;
+	 	margin: 0 auto;
+	 	@include bp(vsm){
+		 	width: 100px;
+	 	}
+	}
+	.navbar-header{
+		@include bp(sm){
+			width:100%;
+		}
+	}
+	.navbar-toggle{
+		color: #000;
+		text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+		padding: 4px 10px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		position: relative;
+		float: right;
+		margin-right: 15px;
+		background-color: transparent;
+		background-image: none;
+		border: 1px solid transparent;
+		border-radius: 4px;
+		left: 0;
+		&:hover{
+			background-color:#fff;
+		}
+	}
+}
+
+
+
+/* OFF CANVAS MENU */
+#site-wrapper {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	min-height: 100%;
+	&:after {
+		content: "";
+		display: block;
+	}
+}
+#site-canvas {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.show-nav #site-canvas, .show-nav header, .show-nav #site-menu {
+	-webkit-transform: translateX(240px);
+	transform: translateX(240px);
+
+	transform: translate3d(240px, 0, 0);
+	-webkit-transform: translate3d(240px, 0, 0);
+}
+#site-menu {
+	display: block;
+	width: 240px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: -240px;
+	background: #fff;
+	background-image: url('/images/logo-min.png');
+	background-position: 50% 8px;
+	background-repeat: no-repeat;
+	background-size: 35px;
+	padding: 51px 15px 15px 15px;
+	&:before{
+		content: '';
+		position: absolute;
+		z-index: 0;
+		height: 100%;
+		width: 240px;
+		top:0;
+		left: 0;
+		-webkit-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.1);
+		-moz-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.1);
+		box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.1);
+	}
+	.nav{
+		margin: 0 -15px;
+		float: none !important;
+		li{
+			position: relative;
+			display: block ;
+			float: none !important;
+			&.sub{
+				&:after{
+					content: "\f0da";
+					font-family: $font-awesome;
+					position: absolute;
+					right: 30px;
+					top: 12px;
+					z-index: 1;
+					font-size: 20px;
+					color:#a7cae4;
+					width: 13px;
+				}
+			}
+			&.expanded{
+				&:after{
+					content: "\f0dd";
+					top:8px;
+					right: 32px;
+				}
+			}
+			a{
+				border-bottom: 1px solid #a7cae4;
+				width: 100%;
+				overflow: hidden;
+				text-decoration: none;
+				color: gray;
+				padding: 10px 15px;
+				:hover{
+					background-color: #fff !important;
+				}
+			}
+		}
+		.subnav{
+			display: none;
+			margin:0;
+			padding: 0;
+			-webkit-animation-duration: 0.5s;
+			-ms-animation-duration: 0.5s;
+			-moz-animation-duration: 0.5s;
+			-o-animation-duration: 0.5s;
+			animation-duration: 0.5s;
+			@include box-shadow(0, 4px, 7px, rgba(0, 0, 0, 0.075), inset);
+			&.expanded{
+				display: block;
+				a{
+					display: block;
+					padding: 10px 25px;
+					border-bottom: 1px solid gray;
+				}
+			}
+			li:last-child a{
+				border-bottom:1px solid #a7cae4;
+			}
+		}
+	}
+}
+
+.extra-pop #site-canvas, header, #site-menu {
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+}
+/*.extra-pop #site-menu ul li a{
+  -webkit-transition: all 750ms cubic-bezier(0.32,1.25,0.375,1.15);
+  transition: all 750ms cubic-bezier(0.32,1.25,0.375,1.15);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+.extra-pop .show-nav #site-menu ul li a {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+}*/
+
+.no-scroll{
+	overflow: hidden;
+}
+
+.navbar-collapse, .navbar-collapse .collapse .in{
+	@include bp(md){
+		display: none;
+	}
+}
+
+.navbar-toggle{
+	@include bp(sm){
+		display: inherit;
+		float: left;
+	}
+}

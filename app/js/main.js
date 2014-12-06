@@ -55,14 +55,42 @@ var siteHandler = {
 	 * Establece los eventos de la app
 	 */
 	setEvents: {
-		/**
-		 * Al hacer click sobre una caja se muestra un modal con su contenido (items).
-		 * Si la caja ha sido comprobada se ocultará al cerrar el modal.
-		 */
+		/*realmente hay que usar toggle
+			$('#site-menu .nav li a').click(function() {
+			$('#site-wrapper').toggleClass('show-nav');
+		});*/
+
+		activeMenu: function(e){
+			$('#bars').click(function() {
+				$('#mainWrapper').toggleClass('show-nav');
+			});
+
+			$('.sub').click(function(e){
+				//reset nav
+				$('.nav li ul').removeClass('expanded fadeInDown');
+				$('.sub').removeClass('expanded');
+
+				var $subnav = $(e.currentTarget).find('.subnav');
+				$subnav.addClass('expanded fadeInDown');
+				$(e.currentTarget).toggleClass('expanded');
+
+				$subnav.find('a').click(function(){
+					//hide and close menu
+					$subnav.removeClass('fadeInDown').addClass('fadeOutUp');
+					$subnav.on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						$(this).removeClass('expanded fadeOutUp fadeInDown');
+						$('.sub').removeClass('expanded');
+						$subnav.off('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend');
+					});
+					$('#mainWrapper').toggleClass('show-nav');
+				});
+			});
+		}
 	},
 	init: function() {
 		this.loadTemplate('home', '#mainWrapper');
 
+		siteHandler.setEvents.activeMenu();
 
 	}
 };
