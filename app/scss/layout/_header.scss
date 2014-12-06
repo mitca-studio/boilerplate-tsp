@@ -1,5 +1,5 @@
 header {
-	@include font-size(16, 19);
+	font-size: 21.5pt;
 	@include box-shadow(0, 4px, 7px, rgba(0, 0, 0, 0.075));
 	background: $headergreen;
 	.dropdown-menu{
@@ -40,9 +40,7 @@ header {
 	.navbar-center{
 		text-align: center;
 		position: relative;
-		top: 14px;
-		width: 165px;
-		margin: 0 auto;
+		top: 17px;
 		img{
 			width: 100%;
 		}
