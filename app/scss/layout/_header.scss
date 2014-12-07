@@ -1,8 +1,9 @@
 header {
-	font-size: 21.5pt;
+	font-size: 26px;
 	@include box-shadow(0, 4px, 7px, rgba(0, 0, 0, 0.075));
 	background: $main;
 	color: $header_text;
+	min-height: 48px !important;
 	.dropdown-menu{
 		padding-top: 10px;
 		padding-bottom: 6px;
@@ -33,7 +34,6 @@ header {
 	i.custom{
 		@include font-size(18, 18);
 		position: relative;
-		top:-2px;
 	}
 	.navbar-header{
 		float: none;
