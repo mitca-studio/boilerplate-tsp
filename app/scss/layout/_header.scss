@@ -34,6 +34,7 @@ header {
 	i.custom{
 		@include font-size(18, 18);
 		position: relative;
+		text-shadow: 0 1px 0 rgba(0,0,0,0.15);
 	}
 	.navbar-header{
 		float: none;
@@ -44,6 +45,7 @@ header {
 		text-align: center;
 		position: relative;
 		top: 17px;
+		font-weight: 500;
 		img{
 			width: 100%;
 		}
