@@ -1,3 +1,20 @@
+#mainWrapper.expanded{
+	header{
+		font-size:36px;
+		line-height: 43px;
+		height: 95px;
+		.navbar-center{
+			top:9px;
+			span{
+				display: block;
+			}
+		}
+		.navbar-toggle, .options-right{
+			display: none;
+		}
+	}
+}
+
 header {
 	font-size: 26px;
 	@include box-shadow(0, 4px, 7px, rgba(0, 0, 0, 0.075));
@@ -49,6 +66,12 @@ header {
 		img{
 			width: 100%;
 		}
+		span{
+	 		font-size:25px;
+	 		line-height: 30px;
+	 		color:#fff;
+	 		display: none;
+	 	}
 	}
 }
 .controllers-left{
@@ -111,6 +134,9 @@ header {
 		a{
 			display: block;
 			width: 37px;
+			&:hover{
+				color:#fff;
+			}
 		}
 		#social{
 			position: relative;

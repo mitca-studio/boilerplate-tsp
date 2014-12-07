@@ -79,7 +79,7 @@
 	position: fixed;
 	top: 0;
 	left: -240px;
-	background: #fff;
+	background: #f5efe1;
 	background-image: url('/images/logo-min.png');
 	background-position: 50% 8px;
 	background-repeat: no-repeat;
@@ -104,28 +104,32 @@
 			position: relative;
 			display: block ;
 			float: none !important;
+			a{
+				font-size: 22px;
+				line-height: 26px !important;
+			}
 			&.sub{
 				&:after{
 					content: "\f0da";
 					font-family: $font-awesome;
 					position: absolute;
 					right: 30px;
-					top: 12px;
+					top: 18px;
 					z-index: 1;
-					font-size: 20px;
-					color:#a7cae4;
+					font-size: 28px;
+					color:#6b6b6b;
 					width: 13px;
 				}
 			}
 			&.expanded{
 				&:after{
 					content: "\f0dd";
-					top:8px;
+					top:10px;
 					right: 32px;
 				}
 			}
 			a{
-				border-bottom: 1px solid #a7cae4;
+				border-bottom: 1px solid #6b6b6b;
 				width: 100%;
 				overflow: hidden;
 				text-decoration: none;
@@ -151,17 +155,17 @@
 				a{
 					display: block;
 					padding: 10px 25px;
-					border-bottom: 1px solid gray;
+					border-bottom: none;
 				}
 			}
 			li:last-child a{
-				border-bottom:1px solid #a7cae4;
+				border-bottom:none;
 			}
 		}
 	}
 }
 
-.extra-pop #site-canvas, header, #site-menu {
+#site-canvas, header, #site-menu {
   -webkit-transition: 300ms ease all;
   transition: 300ms ease all;
 }

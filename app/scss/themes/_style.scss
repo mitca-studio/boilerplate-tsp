@@ -23,7 +23,7 @@ body {
 	font-size: 8pt;
 	line-height:10pt;
 	letter-spacing: -1px;
-	background: $backgroundgreen;
+	background: $background;
 	color: $body_text;
 	overflow-x: hidden;
 	margin:0;
@@ -32,9 +32,6 @@ body {
 
 a{
 	color: rgba(255,255,255,.4);
-}
-a:hover {
-	color :$overlay;
 }
 #main{
 	padding-top: 71px;
