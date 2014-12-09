@@ -16,3 +16,9 @@ this["JST"]["app/templates/home.hbs"] = Handlebars.template({"compiler":[6,">= 2
   if (stack1 != null) { buffer += stack1; }
   return buffer + "<div id=\"site-canvas\">\n	<div id=\"main\" data-role=\"main\">\n        <div class=\"container\">\n    		<div class=\"top-wrapper clearfix\">\n    			<table border=\"0\" style=\"border-collapse:collapse;border:0px solid #FFCC00;width:170px\" cellpadding=\"3\" cellspacing=\"3\">\n    				<tr><td>Reino:</td><td>Animalia</td></tr>\n    				<tr><td>División:</td><td>Chordata</td></tr>\n    				<tr><td>Superclase:</td><td>Osteichthyes</td></tr>\n    				<tr><td>Clase:</td><td>Actinopterygii</td></tr>\n    				<tr><td>Orden:</td><td>Perciformes</td></tr>\n    				<tr><td>Familia:</td><td>Scaridae</td></tr>\n    				<tr><td>Género:</td><td>Sparisoma</td></tr>\n    			</table>\n        	</div>\n        </div>\n	</div>\n</div>\n";
 },"usePartial":true,"useData":true});
+
+
+
+this["JST"]["app/templates/layout.hbs"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+  return "<div class=\"layout\">\n	<div id=\"container\">\n		<div class='element xxl' style='background-color: red'><div class='cover'>11</div></div>\n		<div class='element xl' style='background-color: blue'><div class='cover'>21</div></div>\n		<div class='element xl' style='background-color: green'><div class='cover'>22</div></div>\n		<div class='element l' style='background-color: yellow'><div class='cover'>12</div></div>\n		<div class='element l' style='background-color: gray'><div class='cover'>12</div></div>\n		<div class='element xxl' style='background-color: pink'><div class='cover'>11</div></div>\n	</div>\n</div>\n";
+  },"useData":true});

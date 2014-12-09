@@ -3,3 +3,24 @@
 		width: 960px;
 	}
 }
+
+#container{
+	width: 100%;
+	.element{
+		float: left;
+	    background-color: #00ffff;
+	    position: relative;
+		/*&.size-l{
+			width: 150px;
+			height: 150px;
+		}
+		&.size-xl{
+			width: 300px;
+			height: 150px;
+		}
+		&.size-xxl{
+			width: 300px;
+			height: 300px;
+		}*/
+	}
+}
