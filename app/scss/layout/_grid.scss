@@ -3,24 +3,36 @@
 		width: 960px;
 	}
 }
-
-#container{
-	width: 100%;
-	.element{
-		float: left;
-	    background-color: #00ffff;
-	    position: relative;
-		/*&.size-l{
-			width: 150px;
-			height: 150px;
+.layout{
+	height: 500px;
+	#container{
+		width: 100%;
+		.element{
+			float: left;
+		    background-color: #00ffff;
+		    position: relative;
+		    width: 136px;
+		    height: 136px;
+			/*&.size-l{
+				width: 150px;
+				height: 150px;
+			}
+			&.size-xl{
+				width: 300px;
+				height: 150px;
+			}
+			&.size-xxl{
+				width: 300px;
+				height: 300px;
+			}*/
+			span{
+				display: inline-block;
+				height: 100%;
+				vertical-align: middle;
+			}
 		}
-		&.size-xl{
-			width: 300px;
-			height: 150px;
-		}
-		&.size-xxl{
-			width: 300px;
-			height: 300px;
-		}*/
+	}
+	.fillers{
+		display: none;
 	}
 }
